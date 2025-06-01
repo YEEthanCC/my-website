@@ -19,5 +19,5 @@ jobs:
         cache: 'pnpm'
     - name: Install dependencies
       run: pnpm install
-    - name: Run build
-      run: pnpm build
+    - name: Build app
+      run: pnpm run build
