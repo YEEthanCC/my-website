@@ -1,4 +1,4 @@
-export default function Contact() {
+export default function ContactPage() {
     return(
         <div className="w-full, p-4">
             <h1>Contact me:</h1>
