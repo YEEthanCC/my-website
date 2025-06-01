@@ -19,8 +19,28 @@ jobs:
         cache: 'pnpm'
     - name: Install dependencies
       run: pnpm install
+    - name: Debug - List files before build
+      run: |
+        echo "=== Files before build ==="
+        ls -la
+        echo "=========================="
     - name: Build app
       run: pnpm run build
+    - name: Debug - List files after build
+      run: |
+        echo "=== Files after build ==="
+        ls -la
+        echo "=========================="
+    - name: Debug - Check for out folder
+      run: |
+        if [ -d "out" ]; then
+          echo "✅ out folder exists"
+          echo "Contents of out:"
+          ls -la out/
+        else
+          echo "❌ out folder does not exist"
+        fi
+        
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
       with:
