@@ -20,6 +20,8 @@ const config = {
     // !! WARN !!
     ignoreBuildErrors: true,
   },
+  basePath: '/my-website',
+  assetPrefix: '/my-website/',
 };
 
 export default config;
