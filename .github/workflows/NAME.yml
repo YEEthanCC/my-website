@@ -40,7 +40,6 @@ jobs:
         else
           echo "❌ out folder does not exist"
         fi
-        
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
       with:
