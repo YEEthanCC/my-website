@@ -3,12 +3,15 @@ export default function SmartHouseSystemPage() {
         <div className="w-full">
             <div className="w-full px-8 py-4">
                 <h1>AI Smart House System</h1>
+                <a href="https://github.com/YEEthanCC/webduino-smart-house-control">Github link</a>
                 <p>
-                    This project is a smart house system that allows users to control various devices in their home through a web interface. It includes features such as device management, scheduling, and real-time monitoring.
+                    GenAI powered smart house system that accomodated the needs of everyday household
                 </p>
                 <h2>Tech stack</h2>
-                <ul className="ms-8">
-                    <li>Rest API with Express</li>
+                <span>Express, REST API, Javascript, <a href="https://github.com/webduinoio/webduino-blockly">Webduino Blocky</a>, <a href="https://wise-iot.advantech.com/en-us/marketplace/product/advantech.AIAgent">AgentBuilder</a>, OpenAPI Specification</span>
+                <h2>Project Overview</h2>
+                <ul>
+                    <li>Implemented a REST API that controls different housing component </li>
                 </ul>
             </div>
         </div>
