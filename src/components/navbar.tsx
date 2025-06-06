@@ -14,8 +14,8 @@ export default function Navbar() {
           {path != 'about' && <Link href="/about" className="p-4 text-gray-700/50 hover:text-black hover:underline underline-offset-8" onClick={() => setPath('about')}>About me</Link>}
           {path == 'projects' && <Link href="/projects" className="p-4 text-black underline underline-offset-8" onClick={() => setPath('projects')}>My works</Link>}
           {path != 'projects' && <Link href="/projects" className="p-4 text-gray-700/50 hover:text-black hover:underline underline-offset-8" onClick={() => setPath('projects')}>My works</Link>}
-          {path == 'contact' && <Link href="/contact" className="mr-4 p-4 text-black underline underline-offset-8" onClick={() => setPath('contact')}>Contacts</Link>}
-          {path != 'contact' && <Link href="/contact" className="mr-6 p-4 text-gray-700/50 hover:text-black hover:underline underline-offset-8" onClick={() => setPath('contact')}>Contacts</Link>}
+          {path == 'resume' && <Link href="/resume" className="mr-4 p-4 text-black underline underline-offset-8" onClick={() => setPath('resume')}>Resume</Link>}
+          {path != 'resume' && <Link href="/resume" className="mr-4 p-4 text-gray-700/50 hover:text-black hover:underline underline-offset-8" onClick={() => setPath('resume')}>Resume</Link>}
         </div> 
     </div>
   )

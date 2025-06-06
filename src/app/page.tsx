@@ -18,6 +18,7 @@ export default function HomePage() {
       ></Image>
       <h1 className='text-4xl m-4 font-bold'>Ethan Chen</h1>
       <p className='w-1/2'>I am an undergrad student majoring in Computer Science at Simon Fraser University. My expertise includes full stack development, database management, and container technologies. I am also familiar with machine learning concepts and have worked on several interesting projects related to LLMs.</p>
+      <p>Click <a href='/my-website/about' className='text-blue-700 underline'>here</a> here to know more about me</p>
       <div className='w-1/3 flex justify-center'>
         <a href="https://github.com/YEEthanCC" className="mx-4 mt-4 flex items-center hover:text-blue-700">
           <FaGithub className='m-1' size={25} />
@@ -32,6 +33,7 @@ export default function HomePage() {
           yeethan59@gmail.com
         </a>
       </div>
+
     </div>
   )
 }

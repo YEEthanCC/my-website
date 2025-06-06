@@ -1,3 +1,5 @@
+'use client'
+
 export default function SmartHouseSystemPage() {
     return (
         <div className="w-full">
