@@ -16,7 +16,6 @@ export default function AboutPage() {
                         <li>Developed tools utilizing GenAI to automate testing process for apps</li>
                         <li>Designed and implemented AI agents automating customer product inquireies reducing sales team workload</li>
                     </ul>
-                    <li className="mt-4 font-bold">Lv. 108 on Arknights</li>
                 </ul>
             </div>
         </div>
