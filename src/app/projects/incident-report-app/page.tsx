@@ -3,7 +3,6 @@ import { FaGithub } from 'react-icons/fa'
 import { SlArrowLeft } from "react-icons/sl";
 import { SlArrowRight } from "react-icons/sl";
 import { useState } from 'react';
-import { setOriginalNode } from 'typescript';
 
 export default function IncidentReportAppPage() {
     const imageLinks =[
@@ -19,13 +18,13 @@ export default function IncidentReportAppPage() {
     return (
         <div className="grid grid-cols-6 w-full">
             <div className='col-start-2 col-span-2 flex justify-center p-4 items-center'>
-                <SlArrowLeft className='hover:text-blue-700 mr-1' onClick={() => setImage((image - 1) % 6)} />
+                <SlArrowLeft className='hover:text-blue-700 mr-1' onClick={() => setImage((image + imageLinks.length - 1) % imageLinks.length)} />
                 <img
                     src={imageLinks[image]}
                     alt="Profile picture"
                     className='w-96'
                 ></img>
-                <SlArrowRight className='hover:text-blue-700 ml-1' onClick={() => setImage((image + 1) % 6)} />
+                <SlArrowRight className='hover:text-blue-700 ml-1' onClick={() => setImage((image + 1) % imageLinks.length)} />
             </div>
             <div className='col-start-4 col-span-2 p-4'>
                 <h1 className="text-2xl font-bold">Incident Report App</h1>
